@@ -4,16 +4,16 @@
 
     <groupId>org.wiztools</groupId>
     <artifactId>markdown2html</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>markdown2html</name>
     <url>http://wiztools.googlecode.com</url>
     
     <scm>
-        <connection>scm:svn:http://wiztools.googlecode.com/svn/markdown2html/tags/markdown2html-0.1.0</connection>
-        <developerConnection>scm:svn:https://wiztools.googlecode.com/svn/markdown2html/tags/markdown2html-0.1.0</developerConnection>
-        <url>scm:svn:https://wiztools.googlecode.com/svn/markdown2html/tags/markdown2html-0.1.0</url>
+        <connection>scm:svn:http://wiztools.googlecode.com/svn/markdown2html/trunk/</connection>
+        <developerConnection>scm:svn:https://wiztools.googlecode.com/svn/markdown2html/trunk/</developerConnection>
+        <url>http://code.google.com/p/wiztools/source/browse/</url>
     </scm>
     
     <build>
