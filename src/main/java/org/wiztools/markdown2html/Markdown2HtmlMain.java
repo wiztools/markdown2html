@@ -10,7 +10,7 @@ import org.tautua.markdownpapers.parser.ParseException;
  */
 public class Markdown2HtmlMain {
     private static void printHelp(PrintStream out) {
-        out.println("Note: Input is read from STDIN and output written to STDOUT.");
+        out.println("Usage: Input is read from STDIN and output written to STDOUT.");
         out.println();
     }
     
