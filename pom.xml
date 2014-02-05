@@ -8,12 +8,12 @@
     <packaging>jar</packaging>
 
     <name>markdown2html</name>
-    <url>http://wiztools.googlecode.com</url>
+    <url>https://github.com/wiztools/markdown2html</url>
     
     <scm>
-        <connection>scm:svn:http://wiztools.googlecode.com/svn/markdown2html/trunk/</connection>
-        <developerConnection>scm:svn:https://wiztools.googlecode.com/svn/markdown2html/trunk/</developerConnection>
-        <url>http://code.google.com/p/wiztools/source/browse/</url>
+        <connection>scm:git:https://github.com/wiztools/markdown2html.git</connection>
+        <developerConnection>scm:git:https://github.com/wiztools/markdown2html.git</developerConnection>
+        <url>https://github.com/wiztools/markdown2html</url>
     </scm>
     
     <build>
@@ -53,13 +53,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <tagBase>https://wiztools.googlecode.com/svn/markdown2html/tags</tagBase>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
     <properties>
@@ -70,12 +63,12 @@
         <dependency>
             <groupId>org.tautua.markdownpapers</groupId>
             <artifactId>markdownpapers-core</artifactId>
-            <version>1.2.7</version>
+            <version>1.4.2</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.10</version>
+            <version>4.11</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
