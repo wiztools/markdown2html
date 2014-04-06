@@ -1,8 +1,7 @@
 package org.wiztools.markdown2html;
 
 import java.io.*;
-import org.tautua.markdownpapers.Markdown;
-import org.tautua.markdownpapers.parser.ParseException;
+import org.markdown4j.Markdown4jProcessor;
 
 /**
  *
@@ -14,13 +13,10 @@ public class Markdown2HtmlMain {
         out.println();
     }
     
-    public static void main(String[] arg) throws ParseException, IOException {
+    public static void main(String[] arg) throws IOException {
         printHelp(System.err);
         Reader in = new InputStreamReader(System.in);
-        Writer out = new OutputStreamWriter(System.out);
-        Markdown md = new Markdown();
-        md.transform(in, out);
-        out.flush();
-        out.close();
+        String out = new Markdown4jProcessor().process(in);
+        System.out.print(out);
     }
 }
