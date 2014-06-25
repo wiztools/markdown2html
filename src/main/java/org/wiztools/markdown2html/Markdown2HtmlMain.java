@@ -13,8 +13,17 @@ public class Markdown2HtmlMain {
         out.println();
     }
     
-    public static void main(String[] arg) throws IOException {
-        printHelp(System.err);
+    public static void main(String[] args) throws IOException {
+        for(String arg: args) {
+            switch(arg) {
+                case "-h":
+                case "--help":
+                    printHelp(System.out);
+                    System.exit(0);
+            }
+        }
+
+        // Do the conversion:
         Reader in = new InputStreamReader(System.in);
         String out = new Markdown4jProcessor().process(in);
         System.out.print(out);
